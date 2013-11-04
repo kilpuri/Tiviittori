@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tiviittori</title>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<!-- LESS -->
+	<script src="js/less.js"></script>
+	<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less" />
+	<link rel="stylesheet/less" type="text/css" href="css/variables.less" />
+	
+	
+  </head>
+
+  <body style="padding:50px;">
+  
+  <!-- HEADER -->
+ <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+   <div class="container">
+		<div class="navbar-header">
+			 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a href="#" class="navbar-brand">Tiviittori</a>
+		</div>
+	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Testien esittely</a>
+        </li>
+        <li>
+          <a href="#">Tee tilaus</a>
+        </li>
+        <li>
+          <a href="#">Ohjeet</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+		<li class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal" style="margin-top:5px;">
+		 <span class="glyphicon glyphicon-log-in"></span> Kirjaudu
+		</li>
+      </ul>
+    </nav>
+
+	</div>
+</header>
+	<!-- Modal login -->
+	<div class="modal fade" id="myModal" tabindex="3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" keyboard="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title" id="myModalLabel">Kirjaudu Tiviittoriin</h4>
+		  </div>
+		  <div class="modal-body">
+			<form class="form-signin">
+				<input type="text" class="form-control" placeholder="Sähköpostiosoite" required autofocus>
+				<input type="password" class="form-control" placeholder="Salasana" required>
+				<label class="checkbox">
+				  <input type="checkbox" value="remember-me"> Muista kirjautuminen
+				</label>
+				<button class="btn btn-md btn-primary btn-block" type="submit">Kirjaudu sisään</button>
+			</form>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<!-- CONTENT -->
+	<div class="row">
+		  		<ol class="breadcrumb" style="background:none;">
+		  <li class="active">Home</li>
+		  <li class="active">Home</li>
+		  <li class="active">Home</li>
+		  </ol>
+	</div>
+	<div class="container">
+	
+
+
+      <div class="row">
+        <div class="col-lg-10">
+          <h2>Tiviittori - Työkalu osaamisen arviointiin</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. Aliquam quis velit sed nisi laoreet malesuada ut id tellus. Nulla eget ante sed dui commodo aliquam. Duis pharetra viverra interdum.</p>
+          
+        </div>
+      </div>
+      <hr>
+
+	    <div class="row">
+        <div class="col-6 col-sm-6 col-lg-4">
+            
+			<a class="btn btn-primary btn-md" href="#">Testaa oma osaamisesi!</a>
+			<p><br/>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. 
+			</p>
+			
+        </div>
+        <div class="col-6 col-sm-6 col-lg-4">
+           <a class="btn btn-primary btn-md" href="#">Testaa tiimisi osaamistaso!</a>
+		  <p><br/>
+		   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. 
+		   </p>
+        </div>
+    </div>
+
+      
+      <footer>
+        <hr>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Company 2013 &middot; Facebook &middot; Twitter &middot; Google+</p>
+          </div>
+        </div>
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+</html>
