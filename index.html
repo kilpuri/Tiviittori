@@ -17,8 +17,14 @@
 	<script src="js/less.js"></script>
 	<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less" />
 	<link rel="stylesheet/less" type="text/css" href="css/variables.less" />
-	
-	
+
+<!-- Login script only for demo purposes! -->	
+<script type="text/javascript" language="javascript">
+	function redirect() {
+    window.location.replace("login_index.html");
+    return false;
+}
+</script>
   </head>
 
   <body style="padding:50px;">
@@ -65,13 +71,14 @@
 			<h4 class="modal-title" id="myModalLabel">Kirjaudu Tiviittoriin</h4>
 		  </div>
 		  <div class="modal-body">
-			<form class="form-signin">
+			<form class="form-signin" method="post" onsubmit="return redirect()">
 				<input type="text" class="form-control" placeholder="Sähköpostiosoite" required autofocus>
-				<input type="password" class="form-control" placeholder="Salasana" required>
+				<input type="password" class="form-control" style="margin-top:5px;" placeholder="Salasana" required>
 				<label class="checkbox">
 				  <input type="checkbox" value="remember-me"> Muista kirjautuminen
 				</label>
-				<button class="btn btn-md btn-primary btn-block" type="submit">Kirjaudu sisään</button>
+				<button class="btn btn-md btn-primary" type="submit" >Kirjaudu sisään</button>
+				
 			</form>
 		  </div>
 		</div><!-- /.modal-content -->
@@ -79,12 +86,13 @@
 	</div><!-- /.modal -->
 
 	<!-- CONTENT -->
-	<div class="row">
-		  		<ol class="breadcrumb" style="background:none;">
-		  <li class="active">Home</li>
-		  <li class="active">Home</li>
-		  <li class="active">Home</li>
-		  </ol>
+	<!-- Breadcrumbs -->
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb" style="background:none;">
+			  <li class="active">Home</li>
+			 </ol>
+		</div>
 	</div>
 	<div class="container">
 	
@@ -92,7 +100,7 @@
 
       <div class="row">
         <div class="col-lg-10">
-          <h2>Tiviittori - Työkalu osaamisen arviointiin</h2>
+          <h2><img src="img/header.png" />Tiviittori - Työkalu osaamisen arviointiin</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. Aliquam quis velit sed nisi laoreet malesuada ut id tellus. Nulla eget ante sed dui commodo aliquam. Duis pharetra viverra interdum.</p>
           
         </div>
@@ -121,7 +129,7 @@
         <hr>
         <div class="row">
           <div class="col-lg-12">
-            <p>Copyright &copy; Company 2013 &middot; Facebook &middot; Twitter &middot; Google+</p>
+            <p>Copyright &copy; TIEKE 2013</p>
           </div>
         </div>
       </footer>
