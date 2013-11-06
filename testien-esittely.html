@@ -18,14 +18,7 @@
 	<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less" />
 	<link rel="stylesheet/less" type="text/css" href="css/variables.less" />
 	<link rel="icon"     type="image/png"       href="img/favicon.ico" />
-
-<!-- Login script only for demo purposes! -->	
-<script type="text/javascript" language="javascript">
-	function redirect() {
-    window.location.replace("login_index.html");
-    return false;
-}
-</script>
+	
   </head>
 
   <body style="padding:50px;">
@@ -35,26 +28,23 @@
    <div class="container">
 		<div class="navbar-header">
 			 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
+			<span class="sr-only">Navigaatio</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		  </button>
-		  <a href="#" class="navbar-brand">Tiviittori</a>
+		  <a href="index.html" class="navbar-brand">Tiviittori</a>
 		</div>
 	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
+        <li class="active">
           <a href="testien-esittely.html">Testien esittely</a>
-        </li>
-        <li>
-          <a href="tee-tilaus.html">Tee tilaus</a>
         </li>
         <li>
           <a href="ohjeet.html">Ohjeet</a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+	        <ul class="nav navbar-nav navbar-right">
 		<li class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal" style="margin-top:5px;">
 		 <span class="glyphicon glyphicon-log-in"></span> Kirjaudu
 		</li>
@@ -85,15 +75,20 @@
 		</div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
+    </nav>
 
+	</div>
+</header>
 	<!-- CONTENT -->
 	<!-- Breadcrumbs -->
 	<div class="container">
 		<div class="row">
 			<ol class="breadcrumb" style="background:none;">
-			  <li class="active">Home</li>
+			  <li><a href="login_index.html">Etusivu</a></li>
+			  <li class="active">Testien esittely</li>
 			 </ol>
 		</div>
+	</div>
 	</div>
 	<div class="container">
 	
@@ -101,7 +96,7 @@
 
       <div class="row">
         <div class="col-lg-10">
-          <h2><img src="img/header.png" />Tiviittori - Työkalu osaamisen arviointiin</h2>
+          <h2>Tiviittori - Testien esittely</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. Aliquam quis velit sed nisi laoreet malesuada ut id tellus. Nulla eget ante sed dui commodo aliquam. Duis pharetra viverra interdum.</p>
           
         </div>
@@ -109,33 +104,23 @@
       <hr>
 
 	    <div class="row">
-        <div class="col-6 col-sm-6 col-lg-4">
-            
-			<a class="btn btn-primary btn-md" href="#">Testaa oma osaamisesi!</a>
-			<p><br/>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. 
-			</p>
-			
-        </div>
-        <div class="col-6 col-sm-6 col-lg-4">
-           <a class="btn btn-primary btn-md" href="#">Testaa tiimisi osaamistaso!</a>
-		  <p><br/>
-		   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. 
-		   </p>
-        </div>
-    </div>
+			<div class="col-6 col-sm-6 col-lg-6">
+				
+				<h4>Teknis-käytännölliset taidot</h4>
+				<p><br/>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt, lorem non aliquam aliquam, ante neque accumsan felis, et varius velit odio ut sem. Nam hendrerit turpis et mi consequat, eget placerat tellus sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tristique elementum. Praesent accumsan condimentum nibh. Vivamus magna enim, consequat at nunc vitae, consectetur eleifend ligula. Duis auctor consequat lacus, eget aliquet elit sodales vel. 
+				</p>
+				
+			</div>
+			<div class="col-6 col-sm-6 col-lg-4">
+			   <a class="btn btn-primary btn-md" href="#">Tilaa testi</a>
+			</div>
+		</div>
 
-      
-      <footer>
-        <hr>
-        <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; TIEKE 2013</p>
-          </div>
-        </div>
-      </footer>
 
-    </div><!-- /.container -->
+
+
+
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->

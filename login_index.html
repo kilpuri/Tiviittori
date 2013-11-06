@@ -17,7 +17,7 @@
 	<script src="js/less.js"></script>
 	<link rel="stylesheet/less" type="text/css" href="css/bootswatch.less" />
 	<link rel="stylesheet/less" type="text/css" href="css/variables.less" />
-	
+	<link rel="icon"     type="image/png"       href="img/favicon.ico" />
 	
   </head>
 
@@ -38,17 +38,18 @@
 	<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
         <li>
-          <a href="#">Testien esittely</a>
+          <a href="omat-tiedot.html">Omat tiedot</a>
         </li>
         <li>
-          <a href="#">Tee tilaus</a>
+          <a href="ohjeet.html">Ohjeet</a>
         </li>
-        <li>
-          <a href="#">Ohjeet</a>
+		<li>
+          <a target="_blank" href="http://www.webropolsurveys.com/S/7D2936EF1D867C57.par">Palaute</a>
         </li>
       </ul>
 	  <!-- Logout just as a link, no real action -->
       <ul class="nav navbar-nav navbar-right">
+		<li class="navbar-text">Olli Osallistuja</li>
 		<a href="index.html"><li class="btn btn-primary btn-md" style="margin-top:5px;">
 		 <span class="glyphicon glyphicon-log-out"></span> Kirjaudu ulos
 		</li></a>
@@ -103,7 +104,7 @@
 						<div class="col-sm-5 col-lg-5" style="margin-left:5px;">
 							<p><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Viimeinen vastauspäivä:<br/>
 							Lorem ipsum<br/>
-						<span class="glyphicon glyphicon-pen"></span><a class="btn btn-warning btn-md btn-block" href="#" style="background-color:#E3A716;">Aloita testi</a>
+						<span class="glyphicon glyphicon-pen"></span><a class="btn btn-warning btn-md btn-block" target="_blank" href="http://www.webropolsurveys.com/S/7D2936EF1D867C57.par" style="background-color:#E3A716;">Aloita testi</a>
 							</p>
 						</div>
 				  </div>
@@ -138,7 +139,7 @@
 							<div class="col-sm-5 col-lg-5" style="margin-left:5px;">
 								<p><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Viimeinen vastauspäivä:<br/>
 								Lorem ipsum<br/>
-								<span class="glyphicon glyphicon-pen"></span><a class="btn btn-warning btn-md btn-block" href="#" style="background-color:#98B832;">Aloita testi</a>
+								<span class="glyphicon glyphicon-pen"></span><a class="btn btn-success btn-md btn-block" href="#" style="background-color:#98B832;">Aloita testi</a>
 								</p>
 							</div>
 					  </div>
@@ -171,9 +172,9 @@
 								</p>
 							</div>
 							<div class="col-sm-5 col-lg-5" style="margin-left:5px;">
-								<p><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Viimeinen vastauspäivä:<br/>
-								Lorem ipsum<br/>
-								<span class="glyphicon glyphicon-pen"></span><a class="btn btn-warning btn-md btn-block disabled" href="#" style="background-color:#289DBB;">Aloita testi</a>
+								<p><span class="glyphicon glyphicon-calendar"></span>&nbsp;&nbsp;Suorituspäivämäärä: 01.01.2013<br/>
+								<br/>
+								<span class="glyphicon glyphicon-pen"></span><a class="btn btn-info btn-md btn-block disabled" href="#" style="background-color:#289DBB;">Aloita testi</a>
 								</p>
 							</div>
 					  </div>
@@ -184,8 +185,12 @@
 				<div class="col-sm-4 col-lg-4">
 					<div class="panel panel-default" style="border-color:#289DBB;">
 					  <div class="panel-body">
+					   <h4>Tulokset</h4>
 						<p>Suorituspäivämäärä: 1.1.2013</p>
-						<p>Hyvät tiedot</p>
+						<p>
+						<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;(Hyvät tiedot)</p>
+						<p><a class="btn btn-sm btn-info" href="report.html" target="_blank"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;Avaa raportti</a></p>
+						
 					  </div>
 					</div>
 				</div>

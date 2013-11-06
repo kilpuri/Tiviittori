@@ -4918,6 +4918,9 @@ a.list-group-item.active:focus .list-group-item-text {
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #772c80;
 }
+
+/** ------------------- PANEL SUCCESS ---------------------
+*/
 .panel-success {
   border-color: #98B832;
 }
@@ -4935,8 +4938,11 @@ a.list-group-item.active:focus .list-group-item-text {
 .panel-success > .panel-footer + .panel-collapse .panel-body {
   border-bottom-color: #d6e9c6;
 }
+
+/** ------------------- PANEL WARNING ---------------------
+*/
 .panel-warning {
-  border-color: #faebcc;
+  border-color: #E3A716;
 }
 .panel-warning > .panel-heading {
   color: #fff;
